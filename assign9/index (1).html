@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
+      alt="Starbucks Logo" id="logo">
+    <h1>Starbucks Coffee Shop</h1>
+  </header>
+  <div id="menu">
+    <h2>Menu</h2>
+    <div style="display: flex; justify-content: space-evenly;">
+      <div class="item" data-time="10">
+        <h3>Espresso</h3>
+        <p>Preparation time: <span class="prep-time">10</span> seconds</p>
+        <button class="order-button" onclick="placeOrderEssperso(10)">Order</button>
+      </div>
+      <div class="item" data-time="15">
+        <h3>Latte</h3>
+        <p>Preparation time: <span class="prep-time2">15</span> seconds</p>
+        <button class="order-button" onclick="placeOrderLatte(15)">Order</button>
+      </div>
+    </div>
+
+    <!-- Add more items as needed -->
+  </div>
+
+  <div id="orders">
+    <h2>Orders</h2>
+    <!-- Orders will be dynamically added here -->
+
+    <!-- TODO remove the below elements. they are just here to use for adding dynamically from JS -->
+
+    <!-- Counter item -->
+ 
+
+    <!-- Completed item -->
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
