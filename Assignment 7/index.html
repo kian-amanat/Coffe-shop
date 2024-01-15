@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" class="display" />
+      <li id="list"></li>
+
+      <div class="buttons">
+        <button class="operator" onClick="clearSc()" >AC</button>
+        <button class="operator" onClick="numberDisplay('!')">!</button>
+        <button class="operator" onClick="numberDisplay('%')">%</button>
+        <button class="operator" onClick="numberDisplay('/')">/</button>
+
+        <button onClick="numberDisplay('7')" value="7">7</button>
+        <button onClick="numberDisplay('8')">8</button>
+        <button onClick="numberDisplay('9')">9</button>
+        <button  class="operator" onClick="numberDisplay('*')">*</button>
+
+        <button onClick="numberDisplay(4)">4</button>
+        <button onClick="numberDisplay(5)">5</button>
+        <button onClick="numberDisplay(6)">6</button>
+        <button class="operator" onClick="numberDisplay('-')">-</button>
+
+        <button onClick="numberDisplay(1)">1</button>
+        <button onClick="numberDisplay(2)">2</button>
+        <button onClick="numberDisplay(3)">3</button>
+        <button class="operator" onClick="numberDisplay('+')">+</button>
+
+        <button onClick="numberDisplay(0)">0</button>
+        <button onClick="numberDisplay('00')">00</button>
+        <button onClick="numberDisplay('.')">.</button>
+        <button class="operator" onClick="equal()">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
